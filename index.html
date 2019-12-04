@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Blog</title>
-    </head>
-    <body>
-        <p> TEST</p>
-    </body>
-</html>
+---
+layout: default
+---
+
+{% for item in site.data.plog %}
+ <p> {{ item.data | markdownify }} </p>
+{% endfor %}
